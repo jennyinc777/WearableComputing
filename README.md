@@ -25,3 +25,11 @@ The data sets that were used were:
 7. `subject_train.txt` - Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
 
 ## The Output
+The output will be a data table that includes only the averages and standard deviations of the 3-axial linear acceleration and 3-axial angular velocity for both the accelerometer and gyroscope. The `run_analysis.R` script will:
+1. Download and upzips the file folder
+2. Reads the train and test data files
+3. Merges the training and the test sets to create one data set
+4. Uses descriptive activity names to name the activities in the data set
+5. Appropriately labels the data set with descriptive variable names
+6. For the data set in Step 4, create a second independent tide data set with the average of each variable for each activity and each subject
+
