@@ -4,16 +4,19 @@ author: "Your name here"
 date: "The date here"
 ---
 
-## Project Description
-Short description of the project
+## Codebook Description
+This code book modifies and updates the original codebook from the Human Activity Recognition Using Smartphones Dataset to indicate all the variables and summaries calculated, along with units, and any other relevant information.
 
-## Study design and data processing
+## Study Design
 
-### Collection of the raw data
-Description of how the data was collected.
-
-### Notes on the original (raw) data 
-Some additional notes (if avaialble, otherwise you can leave this section out).
+#### Collection of the raw data
+The original data came in a zip file called `UCI HAR Dataset.zip`. This zip file contained:
+1. `test` folder 
+2. `train` folder
+3. `activity_labels.txt` - Links the class labels with their activity name
+4. `features.txt` - List of all features 
+5. `features_info.txt` - Shows information about the variables used on the feature vector
+6. `README.txt`
 
 ## Creating the tidy datafile
 
@@ -45,8 +48,3 @@ Some information on the variable including:
 #### Notes on variable 1:
 If available, some additional notes on the variable not covered elsewehere. If no notes are present leave this section out.
 
-## Sources
-Sources you used if any, otherise leave out.
-
-## Annex
-If you used any code in the codebook that had the echo=FALSE attribute post this here (make sure you set the results parameter to 'hide' as you do not want the results to show again)
