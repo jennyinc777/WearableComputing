@@ -1,7 +1,7 @@
 ---
-title: "Codebook template"
-author: "Your name here"
-date: "The date here"
+title: "Project Codebook"
+author: "Jenny"
+date: "07/02/2017"
 ---
 
 ## Codebook Description
@@ -18,15 +18,7 @@ The original data came in a zip file called `UCI HAR Dataset.zip`. This zip file
 5. `features_info.txt` - Shows information about the variables used on the feature vector
 6. `README.txt`
 
-## Creating the tidy datafile
-
-### Guide to create the tidy data file
-Description on how to create the tidy data file (1. download the data, ...)/
-
-### Cleaning of the data
-Short, high-level description of what the cleaning script does. [link to the readme document that describes the code in greater detail]()
-
-## Description of the variables in the tiny_data.txt file
+## Description of the variables in the tidy_data.txt file
 General description of the file including:
  - Dimensions of the dataset
  - Summary of the data
