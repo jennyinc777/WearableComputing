@@ -31,5 +31,5 @@ The output will be a data table that includes only the averages and standard dev
 3. Merges the training and the test sets to create one data set
 4. Uses descriptive activity names to name the activities in the data set
 5. Appropriately labels the data set with descriptive variable names
-6. For the data set in Step 4, create a second independent tide data set with the average of each variable for each activity and each subject
+6. From the data set in Step 4, create a second independent tide data set with the average of each variable for each activity and each subject
 
