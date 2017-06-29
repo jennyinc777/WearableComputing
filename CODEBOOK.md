@@ -5,7 +5,7 @@ date: "07/02/2017"
 ---
 
 ## Codebook Description
-This code book modifies and updates the original codebook from the Human Activity Recognition Using Smartphones Dataset to indicate all the variables and summaries calculated, along with units, and any other relevant information.
+This code book describes the modifications and updates that were done to the data from the Human Activity Recognition Using Smartphones Dataset. The code book also indicates all the variables and summaries calculated, along with units, and any other relevant information.
 
 ## Study Design
 
@@ -18,25 +18,99 @@ The original data came in a zip file called `UCI HAR Dataset.zip`. This zip file
 5. `features_info.txt` - Shows information about the variables used on the feature vector
 6. `README.txt`
 
-## Description of the variables in the tidy_data.txt file
-General description of the file including:
- - Dimensions of the dataset
- - Summary of the data
- - Variables present in the dataset
+Within the TEST folder, there were 4 files:
+1. `subject_test.txt` - Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
+2. `X_test.txt` - This file contains the values (or observations) of the 30 subjects.
+3. `y_test.txt` - This file contains the number corresponding to the activity label.
+4. `Inertial Signals` - This file contains additional data that was not used in my calculations.
 
-(you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
+Within the TRAIN folder, there were 4 files:
+1. `subject_train.txt` - Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
+2. `X_train.txt` - This file contains the values (or observations) of the 30 subjects.
+3. `y_train.txt` - This file contains the number corresponding to the activity label.
+4. `Inertial Signals` - This file contains additional data that was not used in my calculations.
 
-### Variable 1 (repeat this section for all variables in the dataset)
-Short description of what the variable describes.
+#### Description of the variables
+* `Subject_ID` - Identifies the subject who performed the activity. Its range is from 1 to 30.
+* `Activity` - Gives one of the six activities that was studied: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.
+* `Test_Or_Train` - Identifies which two sets (TEST file or TRAIN file) the data came from
 
-Some information on the variable including:
- - Class of the variable
- - Unique values/levels of the variable
- - Unit of measurement (if no unit of measurement list this as well)
- - In case names follow some schema, describe how entries were constructed (for example time-body-gyroscope-z has 4 levels of descriptors. Describe these 4 levels). 
+#### Measurements
+The measurements can be broken down into two categories:
+ * Measurements derived in time - the body linear acceleration and angular velocity were derived in time to botain Jerk signals
+ * Fast Fourier Transform (FFT)
+##### Measurements derived _in time_
+Average body acceleration in the X, Y, and Z directions:
+* tBodyAcc.mean.X
+* tBodyAcc.mean.Y
+* tBodyAcc.mean.Z
 
-(you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
+Average gravity acceleration in the X, Y, and Z directions:
+* tGravityAcc.mean.X
+* tGravityAcc.mean.Y
+* tGravityAcc.mean.Z
 
-#### Notes on variable 1:
-If available, some additional notes on the variable not covered elsewehere. If no notes are present leave this section out.
+Average body Jerk acceleration in the X, Y, and Z directions:
+* tBodyAccJerk.mean.X
+* tBodyAccJerk.mean.Y
+* tBodyAccJerk.mean.Z
+
+Average body angular velocity in the X, Y, and Z directions:
+* tBodyGyro.mean.X
+* tBodyGyro.mean.Y
+* tBodyGyro.mean.Z
+
+Average body Jerk angular velocity in the X, Y, and Z directions:
+* tBodyGyroJerk.mean.X
+* tBodyGyroJerk.mean.Y
+* tBodyGyroJerk.mean.Z
+
+Average magnitude of body acceleration, gravity, Jerk acceleration, angular velocity, and Jerk angular velocity in the X, Y, and Z directions:
+* tBodyAccMag.mean
+* tGravityAccMag.mean
+* tBodyAccJerkMag.mean
+* tBodyGyroMag.mean
+* tBodyGyroJerkMag.mean
+
+##### Fast Fourier Transform (FFT)
+Average body acceleration in the X, Y, and Z directions:
+* tBodyAcc.mean.X
+* tBodyAcc.mean.Y
+* tBodyAcc.mean.Z
+
+Average body Jerk acceleration in the X, Y, and Z directions:
+* tBodyAccJerk.mean.X
+* tBodyAccJerk.mean.Y
+* tBodyAccJerk.mean.Z
+
+Average body angular velocity in the X, Y, and Z directions:
+* tBodyGyro.mean.X
+* tBodyGyro.mean.Y
+* tBodyGyro.mean.Z
+
+Average body Jerk angular velocity in the X, Y, and Z directions:
+* tBodyGyroJerk.mean.X
+* tBodyGyroJerk.mean.Y
+* tBodyGyroJerk.mean.Z
+
+Average magnitude of body acceleration, gravity, Jerk acceleration, angular velocity, and Jerk angular velocity in the X, Y, and Z directions:
+* tBodyAccMag.mean
+* tGravityAccMag.mean
+* tBodyAccJerkMag.mean
+* tBodyGyroMag.mean
+* tBodyGyroJerkMag.mean
+
+
+
+
+
+Standard deviation of body acceleration in the X, Y, and Z directions:
+* tBodyAcc.std.X
+* tBodyAcc.std.Y
+* tBodyAcc.std.Z
+
+
+
+
+
 
