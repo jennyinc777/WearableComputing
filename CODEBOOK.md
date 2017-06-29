@@ -168,25 +168,7 @@ Standard deviation and weighted Standard deviation magnitude of body acceleratio
 * fBodyBodyGyroJerkMag.std (units = radians per second)
 Note: The magnitude of these three-dimensional signals were calculated using the Euclidean norm.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Modifications
 
 
 
