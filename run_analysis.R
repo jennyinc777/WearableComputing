@@ -133,15 +133,16 @@ activity_merged$Activity_ID <- NULL
 
 
 # a. The tidy data set
-write.table(activity_merged, file = "tidy_data.txt", row.names = FALSE)
+write.table(activity_merged, file = "activity_merged.txt", row.names = FALSE)
 
 # b. Read in the tidy data set
-tidy_data <- read.table("tidy_data.txt", header = TRUE)
+activity_merged <- read.table("activity_merged.txt", header = TRUE)
 
 # c. Arrange the data to take the average of each variable for each activity and each subject
-tidy_data$Test_Or_Train <- NULL
-tidy_data <- arrange(tidy_data, Subject_ID, Activity)
-final_avg <- tidy_data %>% group_by(Subject_ID, Activity) %>% summarize_all(funs(mean))
+activity_merged$Test_Or_Train <- NULL
+activity_merged <- arrange(activity_merged, Subject_ID, Activity)
+final_avg <- activity_merged %>% group_by(Subject_ID, Activity) %>% summarize_all(funs(mean))
+write.table(final_avg, file = "tidy_data.txt", row.names = FALSE)
 
 
 
